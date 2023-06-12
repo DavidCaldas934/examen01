@@ -78,8 +78,8 @@ public class MainController {
   }
 
   @GetMapping(path="/get/report")
-  public @ResponseBody List getReport() {
-    String sql = "SELECT CONCAT(pet, ' --> ', raza, ' --> ', duenio) as reporte FROM user";
+  public @ResponseBody List<Map<String, Object>> getReport() {
+    String sql = "SELECT CONCAT(pet, ' --> ', raza, ' --> ', duenio) as reporte FROM mascota";
     List<Map<String, Object>> queryResult = jdbcTemplate.queryForList(sql);
     return queryResult;
   }
