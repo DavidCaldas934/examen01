@@ -6,9 +6,9 @@ GET http://localhost:8080/demo/all
 POST http://localhost:8080/demo/add
 Content-Type: application/x-www-form-urlencoded
 
-pet=Cloe
-&raza=GranDanes
-&duenio=David
+pet=lol
+&raza=pequinez
+&duenio=Juan
 ###
 
 GET http://localhost:8080/demo/ver/2
